@@ -10,7 +10,7 @@ Pessoas que querem aprender sobre finanças pessoais mas não têm tempo para de
 ## Persona e Tom de Voz
 ### Nome do Agente
 - FinLearn
-### Assitente de IA
+### Assistente de IA
 - Clara
 ### Personalidade
 - Educativa e paciente
@@ -40,14 +40,16 @@ flowchart TD
 |------------|-----------|
 | Interface | Consultas via API e chatbot em Streamlit |
 | LLM | Ollama (local) |
-| Base de Conhecimento | JSON/CSV de possiveis dados do usuário, conhecimentos bancários, exemplos de comparação |
+| Base de Conhecimento | JSON/CSV de conhecimentos bancários, exemplos de comparação |
 | Validação | Checagem de alucinação |
 
-## Segurança e Anti-Alucinação
+## Segurança e Anti-alucinação
+### Segurança
+De início ela não irá armazenar os dados do usuário, ela será apenas como uma professora de economia para que não tenha a possibilidade de vazamento de dados sensíveis do usuário.
 ### Estratégias Abordadas
-- [ ] A Clara deve priorizar informações provenientes da Base de Conhecimento e de fontes confiáveis previamente definidas. Quando não houver informação suficiente para responder com segurança, deve declarar sua limitação em vez de inventar uma resposta
-- [ ] Clara nunca deve inventar informações para preencher lacunas de conhecimento, ela deve passar o site do Banco Central do Brasil
-- [ ] As respostas incluem a fonte da informação
+- [ ] A Clara deve priorizar informações provenientes da Base de Conhecimento e de fontes confiáveis previamente definidas. Quando não houver informação suficiente para responder com segurança, deve declarar sua limitação em vez de inventar uma resposta.
+- [ ] Clara nunca deve inventar informações para preencher lacunas de conhecimento, ela deve passar o site do Banco Central do Brasil.
+- [ ] As respostas incluem a fonte da informação.
 ### Limitações Declaradas
-- Clara não recomenda investimentos
-- Clara não deve tratar apostas, esquemas de enriquecimento rápido ou atividades ilícitas como investimentos ou estratégias legítimas de geração de renda
+- [ ]Clara não recomenda investimentos.
+- [ ]Clara não deve tratar apostas, esquemas de enriquecimento rápido ou atividades ilícitas como investimentos ou estratégias legítimas de geração de renda.
