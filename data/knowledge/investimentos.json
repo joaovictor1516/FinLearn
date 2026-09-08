@@ -1,50 +1,203 @@
-[
-  {
-    "nome": "Tesouro Selic",
-    "categoria": "renda_fixa",
-    "risco": "baixo",
-    "rentabilidade": "100% da Selic",
-    "aporte_minimo": 30.00,
-    "indicado_para": "Reserva de emergência e iniciantes"
-  },
-  {
-    "nome": "CDB Liquidez Diária",
-    "categoria": "renda_fixa",
-    "risco": "baixo",
-    "rentabilidade": "102% do CDI",
-    "aporte_minimo": 100.00,
-    "indicado_para": "Quem busca segurança com rendimento diário"
-  },
-  {
-    "nome": "LCI/LCA",
-    "categoria": "renda_fixa",
-    "risco": "baixo",
-    "rentabilidade": "95% do CDI",
-    "aporte_minimo": 1000.00,
-    "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
-  },
-  {
-    "nome": "Fundo Imobiliário (FII)",
-    "categoria": "fundo",
-    "risco": "medio",
-    "rentabilidade": "Dividend Yield (DY) costuma ficar entre 6% a 12% ao ano",
-    "aporte_minimo": 100.00,
-    "indicado_para": "Perfil moderado que busca diversificação e renda recorrente mensal"
-  },
-  {
-    "nome": "Fundo de Ações",
-    "categoria": "fundo",
-    "risco": "alto",
-    "rentabilidade": "Variável",
-    "aporte_minimo": 100.00,
-    "indicado_para": "Perfil arrojado com foco no longo prazo"
-  },
-  {
-    "nome": "Poupança",
-    "categoria":"fundo",
-    "risco":"baixo",
-    "rentabilidade":"Variável",
-    "aporte_minimo": 1,
-    "indicado_para": "Quem busca segurança com rendimento mensal"
-  }
-]
+{
+  "versao": "2.0",
+  "nome": "Conhecimento de Investimentos - FinLearn",
+  "objetivo": "Base educacional para explicar conceitos e características de investimentos de forma clara, sem transformar as informações em recomendação personalizada.",
+  "orientacoes_para_o_finlearn": [
+    "Use os dados de cada investimento como ponto de partida para explicações.",
+    "Diferencie características do produto de recomendação para uma pessoa específica.",
+    "Não trate rentabilidade indicada na base como promessa de retorno futuro.",
+    "Ao comparar investimentos, considere risco, liquidez, tributação, prazo, custos e objetivo.",
+    "Quando uma informação depender de regras regulatórias ou tributárias atuais, sinalize que ela deve ser verificada na legislação e nas fontes oficiais vigentes.",
+    "Não recomendar compra ou venda de ativos. O papel do FinLearn é educacional."
+  ],
+  "investimentos": [
+    {
+      "id": "investimento_001",
+      "nome": "Tesouro Selic",
+      "categoria": "renda_fixa",
+      "risco": "baixo",
+      "rentabilidade": "100% da Selic",
+      "aporte_minimo": 30.0,
+      "indicado_para": "Reserva de emergência e iniciantes",
+      "descricao": "Título público federal pós-fixado que acompanha a taxa Selic. É usado com frequência para objetivos de curto prazo e reserva de emergência por combinar baixo risco de crédito com liquidez.",
+      "como_funciona": "O investidor empresta dinheiro ao Governo Federal e recebe uma remuneração vinculada à Selic. O retorno efetivo depende da variação da taxa e das condições da venda do título.",
+      "liquidez": "Diária, observadas as regras e horários de negociação do Tesouro Direto.",
+      "tributacao": "Há incidência de Imposto de Renda sobre os rendimentos, seguindo a tabela regressiva de renda fixa. Há IOF em resgates muito curtos, conforme as regras vigentes.",
+      "garantia": "Título público federal; não é coberto pelo FGC.",
+      "principais_riscos": [
+        "Variação da taxa Selic",
+        "Risco de mercado em uma venda antecipada, embora seja menor que em títulos prefixados ou indexados à inflação de prazo longo",
+        "Custos e condições de negociação"
+      ],
+      "pontos_de_atencao": [
+        "Não confundir baixo risco com ausência de risco.",
+        "Para reserva de emergência, a liquidez e a facilidade de resgate são tão importantes quanto a rentabilidade."
+      ],
+      "conceitos_relacionados": [
+        "Selic",
+        "renda fixa",
+        "liquidez",
+        "Tesouro Direto",
+        "Imposto de Renda"
+      ]
+    },
+    {
+      "id": "investimento_002",
+      "nome": "CDB Liquidez Diária",
+      "categoria": "renda_fixa",
+      "risco": "baixo",
+      "rentabilidade": "102% do CDI",
+      "aporte_minimo": 100.0,
+      "indicado_para": "Quem busca segurança com rendimento diário",
+      "descricao": "Certificado de Depósito Bancário emitido por uma instituição financeira. Na modalidade de liquidez diária, o investidor pode solicitar o resgate antes do vencimento, conforme as condições do produto.",
+      "como_funciona": "O banco capta recursos do investidor e remunera esse dinheiro segundo uma taxa contratada, que pode ser expressa como um percentual do CDI.",
+      "liquidez": "Diária, de acordo com as condições específicas do CDB.",
+      "tributacao": "Normalmente há Imposto de Renda sobre os rendimentos segundo a tabela regressiva de renda fixa. Pode haver IOF em resgates muito curtos.",
+      "garantia": "Pode contar com cobertura do FGC dentro dos limites e condições aplicáveis.",
+      "principais_riscos": [
+        "Risco de crédito do banco emissor",
+        "Variação do CDI",
+        "Condições de liquidez do produto"
+      ],
+      "pontos_de_atencao": [
+        "Percentual maior do CDI não significa automaticamente melhor investimento.",
+        "É importante verificar emissor, liquidez, vencimento, tributação e cobertura do FGC."
+      ],
+      "conceitos_relacionados": [
+        "CDB",
+        "CDI",
+        "FGC",
+        "renda fixa",
+        "liquidez"
+      ]
+    },
+    {
+      "id": "investimento_003",
+      "nome": "LCI/LCA",
+      "categoria": "renda_fixa",
+      "risco": "baixo",
+      "rentabilidade": "95% do CDI",
+      "aporte_minimo": 1000.0,
+      "indicado_para": "Quem pode esperar 90 dias (isento de IR)",
+      "descricao": "Letras de Crédito Imobiliário e do Agronegócio emitidas por instituições financeiras. São instrumentos de renda fixa cuja remuneração pode ser prefixada, pós-fixada ou híbrida, dependendo da emissão.",
+      "como_funciona": "O investidor fornece recursos à instituição emissora e recebe a remuneração prevista na contratação. As condições de carência e vencimento variam entre produtos.",
+      "liquidez": "Pode haver carência e/ou ausência de liquidez diária. O prazo de 90 dias informado na base original deve ser tratado como característica daquele exemplo, não como regra universal para todas as LCI/LCA.",
+      "tributacao": "Tradicionalmente são isentas de Imposto de Renda para pessoa física, observadas as regras tributárias vigentes.",
+      "garantia": "Podem contar com cobertura do FGC dentro dos limites e condições aplicáveis.",
+      "principais_riscos": [
+        "Risco de crédito da instituição emissora",
+        "Risco de liquidez durante o período de carência",
+        "Variação das taxas de mercado quando aplicável"
+      ],
+      "pontos_de_atencao": [
+        "Comparar a rentabilidade líquida com alternativas tributadas, e não apenas os percentuais nominais.",
+        "Verificar prazo, carência, vencimento e possibilidade de resgate antecipado."
+      ],
+      "conceitos_relacionados": [
+        "LCI",
+        "LCA",
+        "FGC",
+        "renda fixa",
+        "isenção de IR",
+        "liquidez"
+      ]
+    },
+    {
+      "id": "investimento_004",
+      "nome": "Fundo Imobiliário (FII)",
+      "categoria": "fundo",
+      "risco": "medio",
+      "rentabilidade": "Dividend Yield (DY) costuma ficar entre 6% a 12% ao ano",
+      "aporte_minimo": 100.0,
+      "indicado_para": "Perfil moderado que busca diversificação e renda recorrente mensal",
+      "descricao": "Fundo de Investimento Imobiliário negociado em bolsa, que reúne recursos de investidores para aplicação em ativos e estratégias relacionadas ao mercado imobiliário.",
+      "como_funciona": "O investidor compra cotas do fundo. O resultado pode vir da valorização ou desvalorização das cotas e dos rendimentos distribuídos pelo fundo, quando existentes.",
+      "liquidez": "As cotas podem ser negociadas no mercado secundário durante o pregão, mas a liquidez varia entre fundos.",
+      "tributacao": "A tributação depende do tipo de rendimento e da operação realizada. Ganhos de capital na venda de cotas podem estar sujeitos a Imposto de Renda. Regras para rendimentos distribuídos dependem das condições legais aplicáveis.",
+      "garantia": "Não possui garantia do FGC.",
+      "principais_riscos": [
+        "Oscilação do preço das cotas",
+        "Vacância e inadimplência em fundos de imóveis físicos",
+        "Risco de crédito de ativos imobiliários",
+        "Risco de gestão",
+        "Risco de liquidez"
+      ],
+      "pontos_de_atencao": [
+        "Dividend Yield é um indicador, não uma promessa de rentabilidade.",
+        "Não considerar apenas o rendimento mensal; analisar patrimônio, estratégia, riscos, custos e histórico do fundo.",
+        "Cotas podem perder valor mesmo quando o fundo distribui rendimentos."
+      ],
+      "conceitos_relacionados": [
+        "FII",
+        "cotas",
+        "Dividend Yield",
+        "renda variável",
+        "vacância",
+        "liquidez"
+      ]
+    },
+    {
+      "id": "investimento_005",
+      "nome": "Fundo de Ações",
+      "categoria": "fundo",
+      "risco": "alto",
+      "rentabilidade": "Variável",
+      "aporte_minimo": 100.0,
+      "indicado_para": "Perfil arrojado com foco no longo prazo",
+      "descricao": "Fundo que concentra sua carteira em ações e outros ativos relacionados ao mercado acionário, de acordo com a política de investimento do fundo.",
+      "como_funciona": "O investidor compra cotas do fundo e participa indiretamente dos resultados da carteira. O gestor toma as decisões de compra e venda dentro da estratégia estabelecida.",
+      "liquidez": "Depende das regras de resgate do fundo, que podem estabelecer prazos de cotização e pagamento.",
+      "tributacao": "A tributação varia conforme a estrutura e a classificação do fundo e as regras tributárias vigentes.",
+      "garantia": "Não possui garantia do FGC.",
+      "principais_riscos": [
+        "Oscilação dos preços das ações",
+        "Risco de mercado",
+        "Risco de gestão",
+        "Risco de concentração",
+        "Risco de liquidez dos ativos"
+      ],
+      "pontos_de_atencao": [
+        "Rentabilidade passada não garante rentabilidade futura.",
+        "O risco do fundo depende de sua estratégia e composição, e não apenas do nome do produto.",
+        "Verificar taxa de administração, eventual taxa de performance, política de resgate e composição da carteira."
+      ],
+      "conceitos_relacionados": [
+        "fundos de investimento",
+        "ações",
+        "renda variável",
+        "gestor",
+        "diversificação"
+      ]
+    },
+    {
+      "id": "investimento_006",
+      "nome": "Poupança",
+      "categoria": "fundo",
+      "risco": "baixo",
+      "rentabilidade": "Variável",
+      "aporte_minimo": 1,
+      "indicado_para": "Quem busca segurança com rendimento mensal",
+      "descricao": "Forma tradicional de depósito bancário cuja remuneração segue regras definidas pela legislação e varia conforme as condições aplicáveis à poupança.",
+      "como_funciona": "O dinheiro depositado é remunerado conforme a regra de rendimento vigente. A remuneração é creditada na chamada data de aniversário do depósito.",
+      "liquidez": "O saldo pode ser sacado, mas o rendimento de cada depósito depende da data de aniversário e das regras aplicáveis.",
+      "tributacao": "Para pessoa física, os rendimentos da poupança são tradicionalmente isentos de Imposto de Renda, observadas as regras vigentes.",
+      "garantia": "Pode contar com cobertura do FGC dentro dos limites e condições aplicáveis.",
+      "principais_riscos": [
+        "Perda de poder de compra caso o rendimento fique abaixo da inflação",
+        "Custo de oportunidade em comparação com outras alternativas",
+        "Regras de remuneração diferentes conforme o período e as condições aplicáveis"
+      ],
+      "pontos_de_atencao": [
+        "A poupança não é um fundo de investimento; o campo categoria da base original foi preservado por compatibilidade, mas conceitualmente ela deve ser tratada como depósito de poupança.",
+        "Para comparar investimentos, considerar rentabilidade líquida, inflação, liquidez e risco."
+      ],
+      "conceitos_relacionados": [
+        "poupança",
+        "renda fixa",
+        "FGC",
+        "inflação",
+        "liquidez"
+      ]
+    }
+  ]
+}

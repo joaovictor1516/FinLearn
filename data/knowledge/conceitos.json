@@ -1,5 +1,396 @@
-[
+{
+  "versao": "1.0",
+  "nome": "Conceitos Financeiros - FinLearn",
+  "objetivo": "Base educacional para explicar finanças pessoais, crédito, investimentos e conceitos econômicos de forma clara e responsável.",
+  "orientacoes": [
+    "Explique o conceito antes de apresentar detalhes técnicos.",
+    "Use exemplos numéricos simples quando ajudarem.",
+    "Diferencie fatos, estimativas e opiniões.",
+    "Não trate exemplos de rentabilidade como promessa de retorno.",
+    "Ao comparar alternativas, considere risco, liquidez, prazo, custos, tributação e objetivo.",
+    "Não transforme explicação educacional em recomendação personalizada.",
+    "Informações tributárias, regulatórias e taxas de mercado devem ser verificadas quando a atualidade for relevante."
+  ],
+  "categorias": [
     {
-        
+      "id": "financas_pessoais",
+      "nome": "Finanças Pessoais",
+      "conceitos": [
+        {
+          "id": "conceito_001",
+          "nome": "Orçamento pessoal",
+          "definicao": "Planejamento das receitas e despesas de uma pessoa ou família durante determinado período.",
+          "exemplo": "Se uma pessoa recebe R$ 4.000 e gasta R$ 3.200 no mês, sobram R$ 800 antes de outros objetivos financeiros.",
+          "relacionados": [
+            "receita",
+            "despesa",
+            "fluxo de caixa",
+            "planejamento financeiro"
+          ]
+        },
+        {
+          "id": "conceito_002",
+          "nome": "Receita",
+          "definicao": "Entrada de dinheiro ou recursos financeiros.",
+          "exemplos": [
+            "salário",
+            "freelance",
+            "aluguel recebido",
+            "juros",
+            "dividendos"
+          ],
+          "relacionados": [
+            "renda",
+            "orçamento",
+            "fluxo de caixa"
+          ]
+        },
+        {
+          "id": "conceito_003",
+          "nome": "Despesa",
+          "definicao": "Saída de dinheiro utilizada para adquirir bens, serviços ou cumprir obrigações.",
+          "tipos": {
+            "fixa": "Tende a variar pouco entre períodos.",
+            "variavel": "Pode variar significativamente entre períodos."
+          },
+          "relacionados": [
+            "orçamento",
+            "custo",
+            "fluxo de caixa"
+          ]
+        },
+        {
+          "id": "conceito_004",
+          "nome": "Reserva de emergência",
+          "definicao": "Recursos mantidos para despesas inesperadas ou períodos de redução de renda.",
+          "caracteristicas": [
+            "prioriza segurança",
+            "prioriza liquidez",
+            "deve ser separada de objetivos de longo prazo"
+          ],
+          "relacionados": [
+            "liquidez",
+            "renda fixa",
+            "planejamento financeiro"
+          ]
+        },
+        {
+          "id": "conceito_005",
+          "nome": "Endividamento",
+          "definicao": "Situação em que uma pessoa possui obrigações financeiras a pagar.",
+          "observacao": "Endividamento não é sinônimo de inadimplência. Inadimplência ocorre quando uma obrigação não é paga no prazo.",
+          "relacionados": [
+            "dívida",
+            "inadimplência",
+            "juros",
+            "crédito"
+          ]
+        },
+        {
+          "id": "conceito_006",
+          "nome": "Juros compostos",
+          "definicao": "Regime em que os juros acumulados passam a integrar a base para o cálculo dos juros seguintes.",
+          "formula": "M = C × (1 + i)^n",
+          "relacionados": [
+            "capital",
+            "taxa de juros",
+            "valor futuro"
+          ]
+        },
+        {
+          "id": "conceito_007",
+          "nome": "Custo de oportunidade",
+          "definicao": "Benefício potencial que deixa de ser obtido ao escolher uma alternativa em vez de outra.",
+          "relacionados": [
+            "decisão financeira",
+            "investimento",
+            "planejamento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "credito",
+      "nome": "Crédito e Dívidas",
+      "conceitos": [
+        {
+          "id": "conceito_008",
+          "nome": "Crédito",
+          "definicao": "Possibilidade de utilizar recursos financeiros antes de efetuar o pagamento correspondente, conforme condições estabelecidas.",
+          "exemplos": [
+            "cartão de crédito",
+            "empréstimo",
+            "financiamento",
+            "cheque especial"
+          ],
+          "relacionados": [
+            "juros",
+            "dívida",
+            "CET",
+            "inadimplência"
+          ]
+        },
+        {
+          "id": "conceito_009",
+          "nome": "Taxa de juros",
+          "definicao": "Percentual que representa o custo ou a remuneração do dinheiro durante determinado período.",
+          "observacao": "Uma taxa deve ser analisada junto ao período ao qual se refere.",
+          "relacionados": [
+            "juros",
+            "taxa nominal",
+            "taxa efetiva"
+          ]
+        },
+        {
+          "id": "conceito_010",
+          "nome": "Custo Efetivo Total (CET)",
+          "definicao": "Indicador que reúne custos de uma operação de crédito para permitir comparação mais completa entre alternativas.",
+          "relacionados": [
+            "crédito",
+            "juros",
+            "tarifas",
+            "financiamento"
+          ]
+        },
+        {
+          "id": "conceito_011",
+          "nome": "Inadimplência",
+          "definicao": "Descumprimento de uma obrigação financeira no prazo estabelecido.",
+          "relacionados": [
+            "dívida",
+            "crédito",
+            "juros"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "investimentos",
+      "nome": "Investimentos",
+      "conceitos": [
+        {
+          "id": "conceito_012",
+          "nome": "Investimento",
+          "definicao": "Aplicação de recursos com expectativa de obter benefício econômico futuro, assumindo determinados riscos e condições.",
+          "componentes": [
+            "rentabilidade",
+            "risco",
+            "liquidez",
+            "prazo",
+            "custos",
+            "tributação"
+          ],
+          "relacionados": [
+            "renda fixa",
+            "renda variável",
+            "diversificação"
+          ]
+        },
+        {
+          "id": "conceito_013",
+          "nome": "Renda fixa",
+          "definicao": "Categoria em que a remuneração segue condições ou regras definidas no momento da aplicação.",
+          "tipos": [
+            "prefixada",
+            "pós-fixada",
+            "híbrida"
+          ],
+          "observacao": "Renda fixa não significa ausência de risco.",
+          "relacionados": [
+            "CDB",
+            "Tesouro Direto",
+            "LCI",
+            "LCA"
+          ]
+        },
+        {
+          "id": "conceito_014",
+          "nome": "Renda variável",
+          "definicao": "Categoria em que o retorno não é previamente conhecido e pode variar conforme as condições de mercado.",
+          "exemplos": [
+            "ações",
+            "FIIs",
+            "ETFs"
+          ],
+          "relacionados": [
+            "volatilidade",
+            "risco de mercado"
+          ]
+        },
+        {
+          "id": "conceito_015",
+          "nome": "Rentabilidade",
+          "definicao": "Variação positiva ou negativa do valor de um investimento durante determinado período.",
+          "observacao": "É importante identificar se o retorno informado é bruto ou líquido e qual período está sendo considerado.",
+          "relacionados": [
+            "retorno",
+            "rentabilidade líquida"
+          ]
+        },
+        {
+          "id": "conceito_016",
+          "nome": "Risco",
+          "definicao": "Possibilidade de o resultado obtido ser diferente do esperado, incluindo a possibilidade de perda.",
+          "tipos": [
+            "mercado",
+            "crédito",
+            "liquidez",
+            "operacional"
+          ],
+          "relacionados": [
+            "volatilidade",
+            "diversificação",
+            "retorno"
+          ]
+        },
+        {
+          "id": "conceito_017",
+          "nome": "Liquidez",
+          "definicao": "Facilidade e velocidade com que um ativo pode ser convertido em dinheiro, considerando condições de mercado e possíveis custos ou perdas.",
+          "observacao": "Liquidez não é sinônimo de rentabilidade ou segurança.",
+          "relacionados": [
+            "resgate",
+            "mercado secundário",
+            "reserva de emergência"
+          ]
+        },
+        {
+          "id": "conceito_018",
+          "nome": "Diversificação",
+          "definicao": "Distribuição dos recursos entre diferentes ativos, emissores, setores ou classes para reduzir a dependência de uma única posição.",
+          "observacao": "Pode reduzir determinados riscos, mas não elimina a possibilidade de perdas.",
+          "relacionados": [
+            "risco",
+            "carteira",
+            "correlação"
+          ]
+        },
+        {
+          "id": "conceito_019",
+          "nome": "Volatilidade",
+          "definicao": "Intensidade das oscilações no preço ou retorno de um ativo ao longo do tempo.",
+          "observacao": "Maior volatilidade significa maior oscilação, mas não determina sozinha a qualidade de um investimento.",
+          "relacionados": [
+            "risco de mercado",
+            "renda variável"
+          ]
+        },
+        {
+          "id": "conceito_020",
+          "nome": "Carteira de investimentos",
+          "definicao": "Conjunto de investimentos mantidos por uma pessoa ou entidade.",
+          "relacionados": [
+            "diversificação",
+            "alocação",
+            "risco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economia",
+      "nome": "Economia",
+      "conceitos": [
+        {
+          "id": "conceito_021",
+          "nome": "Inflação",
+          "definicao": "Aumento generalizado e persistente dos preços de bens e serviços.",
+          "efeito": "Reduz o poder de compra de uma determinada quantidade de dinheiro.",
+          "relacionados": [
+            "IPCA",
+            "poder de compra",
+            "juros reais"
+          ]
+        },
+        {
+          "id": "conceito_022",
+          "nome": "Poder de compra",
+          "definicao": "Quantidade de bens e serviços que pode ser adquirida com determinada quantia de dinheiro.",
+          "relacionados": [
+            "inflação",
+            "renda real",
+            "preços"
+          ]
+        },
+        {
+          "id": "conceito_023",
+          "nome": "Taxa Selic",
+          "definicao": "Taxa básica de juros da economia brasileira, usada como referência para diversas operações financeiras.",
+          "relacionados": [
+            "Banco Central",
+            "política monetária",
+            "renda fixa"
+          ]
+        },
+        {
+          "id": "conceito_024",
+          "nome": "CDI",
+          "definicao": "Referência amplamente utilizada para a remuneração de diversos investimentos de renda fixa no Brasil.",
+          "observacao": "CDI e Selic são conceitos relacionados, mas não são exatamente a mesma taxa.",
+          "relacionados": [
+            "CDB",
+            "renda fixa",
+            "Selic"
+          ]
+        },
+        {
+          "id": "conceito_025",
+          "nome": "Juros reais",
+          "definicao": "Retorno ou taxa considerada depois do efeito da inflação.",
+          "aproximacao": "Juros reais ≈ juros nominais − inflação.",
+          "relacionados": [
+            "inflação",
+            "rentabilidade",
+            "poder de compra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tributacao_e_sistema",
+      "nome": "Tributação e Sistema Financeiro",
+      "conceitos": [
+        {
+          "id": "conceito_026",
+          "nome": "Imposto de Renda sobre investimentos",
+          "definicao": "Tributo que pode incidir sobre rendimentos ou ganhos de determinados investimentos.",
+          "observacao": "A tributação depende do produto, do investidor, do prazo e das regras vigentes."
+        },
+        {
+          "id": "conceito_027",
+          "nome": "Taxa de administração",
+          "definicao": "Custo cobrado em determinados produtos financeiros, especialmente fundos, pela administração da estrutura do investimento.",
+          "relacionados": [
+            "fundos",
+            "rentabilidade líquida",
+            "custos"
+          ]
+        },
+        {
+          "id": "conceito_028",
+          "nome": "FGC",
+          "definicao": "Mecanismo de proteção para determinados depósitos e investimentos elegíveis, dentro dos limites e condições estabelecidos pelas regras aplicáveis.",
+          "observacao": "Não é uma garantia universal para qualquer investimento."
+        },
+        {
+          "id": "conceito_029",
+          "nome": "Mercado primário",
+          "definicao": "Etapa em que determinados ativos são emitidos e os recursos captados chegam ao emissor.",
+          "relacionados": [
+            "emissão",
+            "mercado secundário"
+          ]
+        },
+        {
+          "id": "conceito_030",
+          "nome": "Mercado secundário",
+          "definicao": "Mercado em que investidores negociam entre si ativos que já foram emitidos.",
+          "relacionados": [
+            "liquidez",
+            "mercado primário"
+          ]
+        }
+      ]
     }
-]
+  ]
+}
