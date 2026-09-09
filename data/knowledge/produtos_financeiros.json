@@ -1,16 +1,533 @@
-[
- {
-  "id": "produto_001",
-  "nome":"CDB",
-  "categoria":"Investimento"
- },
- {
-  "id": "produto_002",
-  "nome":"",
-  "categoria":""
- },
- {
-  "id": "produo_003"
- }
-]
-
+{
+  "versao": "1.0",
+  "nome": "Produtos Financeiros - FinLearn",
+  "objetivo": "Base educacional para explicar produtos e serviços financeiros de forma clara e responsável.",
+  "orientacoes": [
+    "Explique primeiro o que é o produto e depois como funciona.",
+    "Diferencie produto financeiro de investimento quando necessário.",
+    "Não trate taxas, tarifas, limites ou rentabilidades de exemplos como valores universais.",
+    "Ao comparar produtos, considere objetivo, custo, risco, liquidez, prazo e condições contratuais.",
+    "Não transforme a descrição de um produto em recomendação personalizada.",
+    "Informações tributárias, regulatórias e comerciais devem ser verificadas quando a atualidade for relevante."
+  ],
+  "categorias": [
+    {
+      "id": "contas_pagamentos",
+      "nome": "Contas e Pagamentos",
+      "produtos": [
+        {
+          "id": "produto_001",
+          "nome": "Conta corrente",
+          "tipo": "conta_bancaria",
+          "definicao": "Conta usada para movimentação de recursos, pagamentos, transferências e serviços bancários.",
+          "funcionalidades": [
+            "transferências",
+            "pagamentos",
+            "débitos",
+            "cartão",
+            "saques"
+          ],
+          "pontos_de_atencao": [
+            "verificar tarifas e pacote de serviços",
+            "avaliar serviços realmente necessários"
+          ],
+          "relacionados": [
+            "tarifa",
+            "Pix",
+            "cartão",
+            "crédito"
+          ]
+        },
+        {
+          "id": "produto_002",
+          "nome": "Conta poupança",
+          "tipo": "conta_deposito",
+          "definicao": "Conta destinada à manutenção de recursos em depósito de poupança, cuja remuneração segue regras específicas.",
+          "caracteristicas": [
+            "possibilidade de saque",
+            "remuneração conforme regras da poupança",
+            "possível cobertura do FGC dentro das regras aplicáveis"
+          ],
+          "pontos_de_atencao": [
+            "o rendimento depende da data de aniversário do depósito",
+            "não confundir com fundo de investimento"
+          ],
+          "relacionados": [
+            "poupança",
+            "FGC",
+            "liquidez"
+          ]
+        },
+        {
+          "id": "produto_003",
+          "nome": "Conta de pagamento",
+          "tipo": "conta_de_pagamento",
+          "definicao": "Conta destinada a pagamentos, transferências e outras movimentações, oferecida por instituições autorizadas.",
+          "pontos_de_atencao": [
+            "funcionalidades e proteções dependem da instituição e modalidade"
+          ],
+          "relacionados": [
+            "Pix",
+            "pagamento",
+            "instituição de pagamento"
+          ]
+        },
+        {
+          "id": "produto_004",
+          "nome": "Pix",
+          "tipo": "meio_de_pagamento",
+          "definicao": "Sistema de pagamentos instantâneos que permite transferências e pagamentos eletrônicos.",
+          "funcionalidades": [
+            "transferências",
+            "pagamentos",
+            "QR Code",
+            "chaves Pix"
+          ],
+          "pontos_de_atencao": [
+            "confirmar o destinatário antes do envio",
+            "conhecer os procedimentos de contestação e devolução aplicáveis"
+          ],
+          "relacionados": [
+            "transferência",
+            "pagamento",
+            "Banco Central"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cartoes",
+      "nome": "Cartões",
+      "produtos": [
+        {
+          "id": "produto_005",
+          "nome": "Cartão de débito",
+          "tipo": "cartao",
+          "definicao": "Cartão que normalmente realiza compras utilizando recursos disponíveis na conta associada.",
+          "funcionamento": "O valor é debitado dos recursos disponíveis conforme as regras da instituição.",
+          "relacionados": [
+            "conta corrente",
+            "pagamento"
+          ]
+        },
+        {
+          "id": "produto_006",
+          "nome": "Cartão de crédito",
+          "tipo": "cartao",
+          "definicao": "Meio de pagamento que utiliza limite de crédito concedido pela instituição.",
+          "funcionamento": "As compras são acumuladas em uma fatura, que deve ser paga conforme as condições estabelecidas.",
+          "custos_possiveis": [
+            "anuidade",
+            "juros de financiamento da fatura",
+            "encargos por atraso"
+          ],
+          "pontos_de_atencao": [
+            "pagar apenas o mínimo pode gerar dívida",
+            "analisar o custo total de parcelamentos"
+          ],
+          "relacionados": [
+            "limite de crédito",
+            "fatura",
+            "CET",
+            "juros"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "credito",
+      "nome": "Crédito",
+      "produtos": [
+        {
+          "id": "produto_007",
+          "nome": "Empréstimo pessoal",
+          "tipo": "credito",
+          "definicao": "Operação em que uma instituição disponibiliza recursos que serão devolvidos conforme prazo, juros e condições contratadas.",
+          "pontos_de_atencao": [
+            "comparar pelo CET",
+            "verificar prazo e valor total pago",
+            "avaliar capacidade de pagamento"
+          ],
+          "relacionados": [
+            "crédito",
+            "juros",
+            "CET",
+            "dívida"
+          ]
+        },
+        {
+          "id": "produto_008",
+          "nome": "Empréstimo consignado",
+          "tipo": "credito",
+          "definicao": "Modalidade em que as parcelas são descontadas diretamente de uma fonte de renda elegível.",
+          "caracteristicas": [
+            "pagamento vinculado à fonte de renda",
+            "condições específicas para cada público"
+          ],
+          "pontos_de_atencao": [
+            "o desconto reduz a renda disponível",
+            "condições dependem das regras vigentes"
+          ],
+          "relacionados": [
+            "crédito",
+            "CET",
+            "juros",
+            "margem consignável"
+          ]
+        },
+        {
+          "id": "produto_009",
+          "nome": "Cheque especial",
+          "tipo": "credito_rotativo",
+          "definicao": "Linha de crédito vinculada à conta corrente, utilizada quando o saldo próprio é insuficiente.",
+          "pontos_de_atencao": [
+            "é crédito, não saldo próprio",
+            "pode ter custo elevado"
+          ],
+          "relacionados": [
+            "crédito",
+            "juros",
+            "limite"
+          ]
+        },
+        {
+          "id": "produto_010",
+          "nome": "Financiamento",
+          "tipo": "credito_de_longo_prazo",
+          "definicao": "Operação de crédito geralmente destinada à aquisição de bem ou serviço específico.",
+          "exemplos": [
+            "imóvel",
+            "veículo"
+          ],
+          "pontos_de_atencao": [
+            "comparar CET",
+            "considerar entrada, prazo, juros e valor total",
+            "verificar garantias"
+          ],
+          "relacionados": [
+            "crédito",
+            "CET",
+            "juros",
+            "garantia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renda_fixa",
+      "nome": "Produtos de Renda Fixa",
+      "produtos": [
+        {
+          "id": "produto_011",
+          "nome": "CDB",
+          "tipo": "renda_fixa",
+          "definicao": "Título emitido por instituição financeira para captação de recursos.",
+          "remuneracao": [
+            "prefixada",
+            "pós-fixada",
+            "híbrida"
+          ],
+          "pontos_de_atencao": [
+            "verificar emissor",
+            "prazo",
+            "liquidez",
+            "tributação",
+            "FGC quando aplicável"
+          ],
+          "relacionados": [
+            "CDI",
+            "FGC",
+            "risco de crédito"
+          ]
+        },
+        {
+          "id": "produto_012",
+          "nome": "LCI",
+          "tipo": "renda_fixa",
+          "definicao": "Título de renda fixa emitido por instituição financeira relacionado à captação para o setor imobiliário.",
+          "remuneracao": [
+            "prefixada",
+            "pós-fixada",
+            "híbrida"
+          ],
+          "pontos_de_atencao": [
+            "verificar prazo",
+            "carência",
+            "liquidez e tributação vigente"
+          ],
+          "relacionados": [
+            "renda fixa",
+            "FGC",
+            "imobiliário"
+          ]
+        },
+        {
+          "id": "produto_013",
+          "nome": "LCA",
+          "tipo": "renda_fixa",
+          "definicao": "Título de renda fixa emitido por instituição financeira relacionado à captação para o agronegócio.",
+          "remuneracao": [
+            "prefixada",
+            "pós-fixada",
+            "híbrida"
+          ],
+          "pontos_de_atencao": [
+            "verificar prazo",
+            "carência",
+            "liquidez e tributação vigente"
+          ],
+          "relacionados": [
+            "renda fixa",
+            "FGC",
+            "agronegócio"
+          ]
+        },
+        {
+          "id": "produto_014",
+          "nome": "Tesouro Direto",
+          "tipo": "titulo_publico",
+          "definicao": "Programa de negociação de títulos públicos federais para pessoas físicas.",
+          "principais_tipos": [
+            "Tesouro Selic",
+            "Tesouro Prefixado",
+            "Tesouro IPCA+"
+          ],
+          "pontos_de_atencao": [
+            "os títulos possuem comportamentos distintos",
+            "venda antecipada pode gerar resultado diferente do esperado no vencimento"
+          ],
+          "relacionados": [
+            "título público",
+            "Selic",
+            "IPCA",
+            "marcação a mercado"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fundos_valores_mobiliarios",
+      "nome": "Fundos e Valores Mobiliários",
+      "produtos": [
+        {
+          "id": "produto_015",
+          "nome": "Fundo de investimento",
+          "tipo": "fundo",
+          "definicao": "Veículo que reúne recursos de investidores para aplicação conforme uma política de investimento.",
+          "funcionamento": "O investidor compra cotas e os recursos são administrados segundo as regras do fundo.",
+          "custos_possiveis": [
+            "taxa de administração",
+            "taxa de performance",
+            "outros custos previstos"
+          ],
+          "pontos_de_atencao": [
+            "analisar política",
+            "riscos",
+            "taxas e regras de resgate"
+          ],
+          "relacionados": [
+            "cota",
+            "gestor",
+            "diversificação"
+          ]
+        },
+        {
+          "id": "produto_016",
+          "nome": "Fundo Imobiliário (FII)",
+          "tipo": "fundo_listado",
+          "definicao": "Fundo que investe em ativos e estratégias relacionadas ao mercado imobiliário.",
+          "fontes_de_retorno": [
+            "rendimentos distribuídos",
+            "variação do preço das cotas"
+          ],
+          "pontos_de_atencao": [
+            "cotas podem cair de preço",
+            "rendimentos não são garantidos",
+            "liquidez varia"
+          ],
+          "relacionados": [
+            "FII",
+            "cotas",
+            "Dividend Yield",
+            "renda variável"
+          ]
+        },
+        {
+          "id": "produto_017",
+          "nome": "ETF",
+          "tipo": "fundo_listado",
+          "definicao": "Fundo cujas cotas são negociadas em bolsa e que geralmente busca acompanhar um índice ou estratégia.",
+          "caracteristicas": [
+            "negociação em bolsa",
+            "diversificação dentro da estratégia"
+          ],
+          "pontos_de_atencao": [
+            "pode haver diferença entre o desempenho do ETF e do índice",
+            "há risco de mercado"
+          ],
+          "relacionados": [
+            "índice",
+            "diversificação",
+            "bolsa"
+          ]
+        },
+        {
+          "id": "produto_018",
+          "nome": "Ação",
+          "tipo": "valor_mobiliario",
+          "definicao": "Valor mobiliário que representa uma parcela do capital social de uma companhia.",
+          "possiveis_retornos": [
+            "valorização do preço",
+            "proventos quando distribuídos"
+          ],
+          "riscos": [
+            "mercado",
+            "empresa",
+            "liquidez"
+          ],
+          "pontos_de_atencao": [
+            "preço pode oscilar",
+            "não há garantia de rentabilidade"
+          ],
+          "relacionados": [
+            "renda variável",
+            "dividendos",
+            "bolsa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "previdencia_seguros",
+      "nome": "Previdência e Seguros",
+      "produtos": [
+        {
+          "id": "produto_019",
+          "nome": "Previdência privada",
+          "tipo": "previdencia_complementar",
+          "definicao": "Produto de previdência complementar usado para acumulação de recursos e posterior recebimento de renda ou resgate conforme o plano.",
+          "principais_modalidades": [
+            "PGBL",
+            "VGBL"
+          ],
+          "pontos_de_atencao": [
+            "tributação",
+            "taxas",
+            "portabilidade",
+            "prazo",
+            "regime tributário"
+          ],
+          "relacionados": [
+            "aposentadoria",
+            "PGBL",
+            "VGBL"
+          ]
+        },
+        {
+          "id": "produto_020",
+          "nome": "Seguro de vida",
+          "tipo": "seguro",
+          "definicao": "Contrato destinado a oferecer cobertura financeira para eventos previstos na apólice relacionados à vida do segurado.",
+          "caracteristicas": [
+            "coberturas",
+            "prêmio",
+            "beneficiários",
+            "condições contratuais"
+          ],
+          "pontos_de_atencao": [
+            "ler coberturas",
+            "exclusões",
+            "carências e condições"
+          ],
+          "relacionados": [
+            "seguro",
+            "sinistro",
+            "beneficiário"
+          ]
+        },
+        {
+          "id": "produto_021",
+          "nome": "Seguro residencial",
+          "tipo": "seguro",
+          "definicao": "Seguro destinado a proteger uma residência contra eventos cobertos pela apólice.",
+          "exemplos_de_cobertura": [
+            "incêndio",
+            "danos elétricos",
+            "roubo ou furto quando contratado"
+          ],
+          "pontos_de_atencao": [
+            "verificar franquia",
+            "exclusões e limites de indenização"
+          ],
+          "relacionados": [
+            "seguro",
+            "franquia",
+            "indenização"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outros",
+      "nome": "Outros Produtos Financeiros",
+      "produtos": [
+        {
+          "id": "produto_022",
+          "nome": "Conta internacional",
+          "tipo": "conta_multimoeda",
+          "definicao": "Conta que permite manter, converter ou movimentar recursos em moedas estrangeiras, conforme os serviços da instituição.",
+          "funcionalidades": [
+            "câmbio",
+            "transferências internacionais",
+            "pagamentos em moeda estrangeira"
+          ],
+          "pontos_de_atencao": [
+            "verificar spread cambial",
+            "tarifas e taxas"
+          ],
+          "relacionados": [
+            "câmbio",
+            "moeda estrangeira",
+            "spread"
+          ]
+        },
+        {
+          "id": "produto_023",
+          "nome": "Título de capitalização",
+          "tipo": "capitalizacao",
+          "definicao": "Produto que combina formação de reserva com características de capitalização e, conforme o plano, participação em sorteios.",
+          "pontos_de_atencao": [
+            "não tratar automaticamente como investimento equivalente a outros produtos",
+            "avaliar resgate, prazo e remuneração"
+          ],
+          "relacionados": [
+            "capitalização",
+            "resgate",
+            "sorteio"
+          ]
+        },
+        {
+          "id": "produto_024",
+          "nome": "Consórcio",
+          "tipo": "autofinanciamento",
+          "definicao": "Sistema de autofinanciamento em grupo para aquisição de bens ou serviços conforme contrato.",
+          "funcionamento": "Participantes contribuem para um fundo comum e recebem crédito conforme as regras de contemplação.",
+          "formas_de_contemplacao": [
+            "sorteio",
+            "lance"
+          ],
+          "pontos_de_atencao": [
+            "não é empréstimo tradicional",
+            "contemplação não ocorre necessariamente no início",
+            "avaliar taxa de administração e prazo"
+          ],
+          "relacionados": [
+            "carta de crédito",
+            "lance",
+            "contemplação"
+          ]
+        }
+      ]
+    }
+  ]
+}
