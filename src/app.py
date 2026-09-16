@@ -15,7 +15,7 @@ with open("./data/persona/perfil_conhecimento.json", "r", encoding = "utf-8") as
     persona_perfil_conhecimento = json.load(perfil_conhecimento)
 
 with open("./data/knowledge/produtos_financeiros.json", "r", encoding = "utf-8") as produtos_financeiros:
-    conhecimento_prosutos_fuinanceiros = json.load(produtos_financeiros)
+    conhecimento_produtos_financeiros = json.load(produtos_financeiros)
 
 PERSONA_PERFIL_CONHECIMENTO_CONHECIMENTOS = persona_perfil_conhecimento["conhecimentos"]
 CONTEXTO = f"""
@@ -23,7 +23,11 @@ CONHECIMENTO DO CLIENTE EM PLANEJAMENTO FINANCEIRO: {PERSONA_PERFIL_CONHECIMENTO
 CONHECIMENTO DO CLIENTE EM INVESTIMENTOS: {PERSONA_PERFIL_CONHECIMENTO_CONHECIMENTOS["investimento"]}
 CONHECIMENTO DO CLIENTE EM CREDITO: {PERSONA_PERFIL_CONHECIMENTO_CONHECIMENTOS["credito"]}
 
+CONHECIMENTO SOBRE PRODUTOS FINANCEIROS: {conhecimento_produtos_financeiros}
 
+CONHECIMENTO SOBRE CONCEITOS FINANCEIROS: {conhecimento_conceitos}
+
+CONHECIMENTO SOBRE INVESTIMENTOS: {conhecimento_investimentos}
 """
 
 PROMPT_SISTEMA = """
