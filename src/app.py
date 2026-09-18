@@ -19,11 +19,11 @@ with open("./data/knowledge/produtos_financeiros.json", "r", encoding = "utf-8")
 
 PERSONA_PERFIL_CONHECIMENTO_CONHECIMENTOS = persona_perfil_conhecimento["conhecimentos"]
 CONHECIMENTO = f"""
-CONHECIMENTO SOBRE PRODUTOS FINANCEIROS: {conhecimento_produtos_financeiros}
+    CONHECIMENTO SOBRE PRODUTOS FINANCEIROS: {conhecimento_produtos_financeiros}
 
-CONHECIMENTO SOBRE CONCEITOS FINANCEIROS: {conhecimento_conceitos}
+    CONHECIMENTO SOBRE CONCEITOS FINANCEIROS: {conhecimento_conceitos}
 
-CONHECIMENTO SOBRE INVESTIMENTOS: {conhecimento_investimentos}
+    CONHECIMENTO SOBRE INVESTIMENTOS: {conhecimento_investimentos}
 """
 
 PROMPT_SISTEMA = """
