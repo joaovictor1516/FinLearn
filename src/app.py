@@ -18,11 +18,7 @@ with open("./data/knowledge/produtos_financeiros.json", "r", encoding = "utf-8")
     conhecimento_produtos_financeiros = json.load(produtos_financeiros)
 
 PERSONA_PERFIL_CONHECIMENTO_CONHECIMENTOS = persona_perfil_conhecimento["conhecimentos"]
-CONTEXTO = f"""
-CONHECIMENTO DO CLIENTE EM PLANEJAMENTO FINANCEIRO: {PERSONA_PERFIL_CONHECIMENTO_CONHECIMENTOS["planejamento"]}
-CONHECIMENTO DO CLIENTE EM INVESTIMENTOS: {PERSONA_PERFIL_CONHECIMENTO_CONHECIMENTOS["investimento"]}
-CONHECIMENTO DO CLIENTE EM CREDITO: {PERSONA_PERFIL_CONHECIMENTO_CONHECIMENTOS["credito"]}
-
+CONHECIMENTO = f"""
 CONHECIMENTO SOBRE PRODUTOS FINANCEIROS: {conhecimento_produtos_financeiros}
 
 CONHECIMENTO SOBRE CONCEITOS FINANCEIROS: {conhecimento_conceitos}
@@ -43,11 +39,19 @@ PROMPT_SISTEMA = """
     - NUNCA recomende investimentos específicos. Explique seu funcionamento, características, riscos e limitações de maneira educacional.
 """
 
+CONHECIMENTO_USUARIO = f"""
+    CONHECIMENTO DO CLIENTE EM PLANEJAMENTO FINANCEIRO: {PERSONA_PERFIL_CONHECIMENTO_CONHECIMENTOS["planejamento"]}
+    CONHECIMENTO DO CLIENTE EM INVESTIMENTOS: {PERSONA_PERFIL_CONHECIMENTO_CONHECIMENTOS["investimento"]}
+    CONHECIMENTO DO CLIENTE EM CREDITO: {PERSONA_PERFIL_CONHECIMENTO_CONHECIMENTOS["credito"]}
+"""
+
 def perguntar(mensagem):
     prompt = f"""
         {PROMPT_SISTEMA}
         
-        Contexto do cliente: {CONTEXTO}
+        Conhecimento do Usuário: {CONHECIMENTO_USUARIO}
+
+        Conhcecimento Necessário: {CONHECIMENTO}
 
         Pergunta: {mensagem}
     """
